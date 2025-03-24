@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Burger Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#cart">Cart</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to Burger Shop, the best place to enjoy delicious and juicy burgers made with the finest ingredients.</p>
+        <img src="https://cdn.pixabay.com/photo/2023/04/14/19/09/ai-generated-7925774_640.jpg">
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At Burger Shop, we are passionate about crafting the best burgers in town. With fresh ingredients and secret sauces, we bring you flavors that you'll love.</p>
+    </section>
+
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-item">
+            <img src="https://foodie.sysco.com/wp-content/uploads/2019/07/Simply-Classic-Burger.jpg" alt="Classic Burger">
+            <h3>Classic Burger</h3>
+            <p>Rs 650</p>
+            <button onclick="addToCart('Classic Burger', 650)">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="https://www.sargento.com/assets/Uploads/Recipe/Image/burger_0__FillWzgwMCw4MDBd.jpg">
+            <h3>Cheese Burger</h3>
+            <p>Rs 850</p>
+            <button onclick="addToCart('Cheese Burger', 850)">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="https://img.freepik.com/premium-photo/spicy-fiery-zinger-burger-with-fries-topped-with-vegetables-tomatoes-ketchup-delicious-ai_1038983-8296.jpg" alt="Spicy Burger">
+            <h3>Spicy Burger</h3>
+            <p>Rs 750</p>
+            <button onclick="addToCart('Spicy Burger', 750)">Add to Cart</button>
+        </div>
+    </section>
+
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: Rs<span id="total">0.00</span></p>
+        <button onclick="checkout()">Checkout</button>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@burgershop.com</p>
+        <p>Phone: 123-456-7890</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Burger Shop</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
